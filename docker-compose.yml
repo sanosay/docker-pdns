@@ -47,7 +47,8 @@ services:
       - 'ns1.example.com:172.6.0.20'
       - 'ns2.example.com:172.6.0.21'
     ports:
-      - '8989:80'
+      - '53:53'
+      - '53:53/udp'
     volumes:
       - /etc/localtime:/etc/localtime:ro
     environment:
